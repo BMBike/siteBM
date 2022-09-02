@@ -3,7 +3,7 @@ import styles from "../styles/Section1.module.css";
 export default function Section1() {
   return (
     <div className={styles.section1}>
-      <h1>BM Bike</h1>
+      <h1>BM Bike teste</h1>
       <p>Ajudando você a chegar mais longe</p>
 
       <div className={styles.parallax}></div>
