@@ -1,6 +1,7 @@
 import sendgrid from '@sendgrid/mail';
 
-sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
+
+echo "export SENDGRID_API_KEY='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'" > sendgrid.env
 
 async function contact(req, res) {
   try {
