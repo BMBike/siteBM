@@ -1,12 +1,11 @@
 import sendgrid from '@sendgrid/mail';
 
-
-echo "export SENDGRID_API_KEY='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'" > sendgrid.env
+sendgrid.setApiKey(process.env.SENDGRID_API_KEY);
 
 async function contact(req, res) {
   try {
     await sendgrid.send({
-      to: 'suportebmbike@gmail.com',
+      to: 'atendimento@bmbike.com.br',
       from: 'suportebmbike@gmail.com',
       subject: `Mensagem de ${req.body.email} pelo site da BM.`,
       text: "Nome: " + req.body.nome + "\nEndereço: " + req.body.endereco + "\nEmail: " + req.body.email + "\nAssunto: " + req.body.assunto + "\nTelefone: " + req.body.telefone + "\nMensagem: " + req.body.mensagem,
