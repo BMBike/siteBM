@@ -4,7 +4,7 @@ import styles from "../styles/Zap.module.css";
 export default function Zap() {
   return (
     <a
-      href="https://api.whatsapp.com/send?phone=5511930554813&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+      href="https://api.whatsapp.com/send?phone=5511964657682&text=Olá%2C%20gostaria%20de%20mais%20informações."
       target="_blank"
       rel="noopener noreferrer"
     >
